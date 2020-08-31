@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+FC Barcelona
+</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/hover.css" rel="stylesheet">
+<link href="css/imagehover.css" rel="stylesheet">
+<link rel="stylesheet" href="css/imagehover.min.css">
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="css/bootstrap.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  
+<style>
+	.clr1{
+	background-color:#171733;
+	}
+	
+	.font1{
+	font-family:SimHei;
+	}
+	
+	ul{
+		list-style-type:none;
+		width:100%;
+		overflow:auto;
+	}
+	
+	li{
+	text-decoration:none;
+	float:right;
+	margin-right:40px;
+	margin-top:20px;
+	
+	}
+	
+
+	.li1{
+		float:right;
+		align:right;
+		display:block;
+		color:white;
+		text-decoration:none;
+		font-family:Century Gothic;
+	}
+	
+	.opa1{
+	opacity:0.6;
+	}
+	
+	
+	.gr1 {
+	font-size:40px;
+	background: -webkit-linear-gradient(#4F1224,#171733);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+	
+	margin2{
+	margin-left:-30px;
+	}
+	
+	.hr1{
+	background-color:grey;
+	}
+	
+
+
+	.image {
+	display: block;
+	width: 100%;
+	height: auto;
+	}
+
+	.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color:white;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+	}
+	
+	.overlay2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color:rgba(0,0,0,0);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+	}
+
+	.cont1:hover .overlay {
+	height: 80%;
+	}
+	
+	.cont2:hover .overlay2 {
+	height: 60%;
+	}
+
+	.text {
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family:Calibri
+	}
+	
+	
+	.flip-box {
+	background-color: transparent;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px;
+	}
+
+	.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	}
+
+	.flip-box:hover .flip-box-inner {
+	width:640px;
+	height:400px;
+	transform: rotateY(180deg);
+	}
+
+	.flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	}
+
+	.flip-box-front {
+	background-color: #bbb;
+	color: black;
+	}
+
+	.flip-box-back {
+	background-color:#060D21;
+	color:white;
+	transform: rotateY(180deg);
+	}
+	
+	.icon1{
+	font-size:150px;
+	}
+	
+	.big1{
+	font-size:90px;
+	}
+	
+	.big2{
+	font-size:50px;
+	}
+	
+	#scroll a{
+	left:-80px;
+	transition:0.3s;
+	padding:15px;
+	width:900px;
+	border-radius:0 5px 5px 0;
+	}
+	
+	.bg1 {
+    background-image:url(img/bg8.jpg);
+	}
+	
+	.bg2 {
+    background-image:url(img/bg2.jpg);
+	width:100%;
+	height:400px;
+	}
+	
+	.bg3 {
+    background-image:url(img/blue1.jpg);
+	}
+	
+	.bg4 {
+    background-image:url(img/bg12.jpg);
+	}
+		
+	.grad2{
+	background:linear-gradient(to bottom right, blue, pink);
+	}
+	
+	
+	
+.img-gradient{
+  position:relative;
+  display:inline-block;
+}
+
+
+.img-gradient:after {
+  content:'';
+  position:absolute;
+  left:0; top:;
+  width:100%; height:100%;
+  display:inline-block;
+  background: -webkit-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.img-gradient img{
+  display:block;
+}
+	
+	
+	.favsize1{
+	font-size:23px;
+	color:#154285;
+	}
+	
+	.align1{
+	align:left;
+	float:left;
+	}
+	
+</style>
+<link href="favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body style="background-color:#171733">
+
+
+<div class="row">
+<nav class="navbar clr1">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+	  data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><ul><li><font style="font-family:Calibri" color="white" size="6"><b>FC BARCELONA</b></font></li><li><img src="img/logo1.png" align="left" class="align1"></li></ul></a>
+    </div>
+	
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	  
+	  <div class="col-lg-2 col-xs-12" style="margin-left:300px">
+	  </div>
+	  <div class="col-lg-2 col-xs-12" >
+        <li><a href="index.html"><font style="font-family:Calibri" size="4" color="white"><b>OUR HOME</b></font></a></li>
+		</div>
+		<div class="col-lg-2 col-xs-12" style="margin-left:-100px">
+		<li><a href="ticket.html"><font style="font-family:Calibri" size="4" color="white"><b>TICKETS</b></font></a></li>
+		</div>
+		<div class="col-lg-2 col-xs-12" style="margin-left:-100px">
+		<li><a href="shop.html"><font style="font-family:Calibri" size="4" color="white"><b>SHOP</b></font></a></li>
+		</div>
+		<div class="col-lg-2 col-xs-12" style="margin-left:-50px">
+		<li><a href="about.html"><font style="font-family:Calibri" size="4" color="white"><b>ABOUT CLUB</b></font></a></li>
+	   </div>
+	   <div class="col-lg-2 col-xs-12" style="margin-left:-50px">
+		<li><a href="contact.html"><font style="font-family:Calibri" size="4" color="white"><b>CONTACT US</b></font></a></li>
+	   </div>
+	  </ul>
+    </div>
+	<br>
+  </div>
+  <br>
+</nav>
+</div>
+
+
+<div class="container-fluid" style="margin-top:-22px">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1500">
+  
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
+	  <li data-target="#myCarousel" data-slide-to="5"></li>
+	  <li data-target="#myCarousel" data-slide-to="6"></li>
+	  <li data-target="#myCarousel" data-slide-to="7"></li>
+	  <li data-target="#myCarousel" data-slide-to="8"></li>
+	  <li data-target="#myCarousel" data-slide-to="9"></li> 
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/heading1.JPG" style="width:100%;">
+      </div>
+	  
+	  <div class="item">
+        <img src="img/messigoldenboot1.JPG" style="width:100%;">
+      </div>
+	  
+	  <div class="item">
+        <img src="img/messigoldenboot3.JPG" style="width:100%;">
+      </div>
+	  
+	  <div class="item">
+        <img src="img/messigoldenboot2.JPG" style="width:100%;">
+      </div>
+	  
+	  <div class="item">
+        <img src="img/messigoldenboot4.JPG" style="width:100%;">
+      </div>
+	  
+	  <div class="item">
+        <img src="img/b12.jpg" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/m2.jpg" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="img/cn3.jpg" style="width:100%;">
+      </div>
+	  
+	  <div class="item">
+        <img src="img/b19.jpg" style="width:100%;">
+      </div>
+	  
+	  <div class="item">
+        <img src="img/sp1.jpg" style="width:100%;">
+      </div>
+	  
+    </div>
+
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
+</div>
+
+
+
+
+<svg height="50" width="100%">
+
+<defs>
+	<linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" style="stop-color:rgb(78,18,44);stop-opacity:4"/>
+		<stop offset="100%" style="stop-color:rgb(23,22,53);stop-opacity:1"/>
+	</linearGradient>
+</defs>
+
+<rect width="100%" height="100%" fill="url(#grad1)"/>
+<center><font style="font-family:SimHei" color="white"><b>MAIN PARTNERS&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</b></font><text x="100" y="100" fill="black" font-size="50"><img src="img/nike2.png" height="35px" width="80" class="opa1"><img src="img/rakuten2.png" height="40px" width="200px" class="opa1"><img src="img/beko1.png" height="35px" width="80" class="opa1"></text></center>
+</svg>
+
+
+<div style="background-color:#171733">
+	<div class="well container" style="background-color:white">
+	<font style="font-family:Calibri" class="gr1"><b>BARCA FIRST TEAM</b></font><font size="6" color="#154286" style="font-family:GulimChe">&nbsp;MATCHES</font><br>
+	<br>
+	<center>
+		<font color="#101532" style="font-family:Gulim" size="6">MATCH FIXTURES</font>
+	</center>
+	
+		<div class="row">
+			<div class="col-lg-4 col-xs-12">
+				<center><table>
+					<tr>
+						<td bgcolor="#154286" colspan="3">
+							<font color="white" size="6" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp;11 </b></font><font color="white" style="font-family:Calibri" size="3"><b>TUESDAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font>
+						</td>
+					</tr>
+					
+					<tr>
+					<br>
+					<br>
+						<td colspan="3"><center><img src="img/cl1.png"></center></td>
+					</tr>
+					<tr>
+					<td>
+					
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/logo1.png">
+					</td>
+					<td>
+						<div style="background-color:#222D58"><font color="white" size="6" style="font-family:Calibri"><b>&nbsp;&nbsp;1 - 1&nbsp;&nbsp;</div>
+					</td>
+					<td>
+						<b>&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tot1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+					</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+						
+						<br>
+			
+							<center><div style="background-color:#1A1630"><br><a><font color="white" size="4" style="font-family:Calibri"><b> WATCH MATCH REPLAY</b><br></font></a></div></center>
+				
+						<br>
+						
+						</td>
+					</tr>
+				</table>
+				</center>
+		</div>
+	
+		<div class="col-lg-4 col-xs-12 margin2">
+			<center>
+			<table>
+					<tr>
+						<td bgcolor="#154286" colspan="3">
+							<font color="white" size="6" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp;16 </b></font><font color="white" style="font-family:Calibri" size="3"><b>SUNDAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font>
+						</td>
+					</tr>
+					<tr>
+					
+						<td colspan="3"><center><img src="img/laliga1.png" width="200" height="90"></center></td>
+					</tr>
+					<tr>
+					<td>
+					
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/logo2.png">
+					</td>
+					<td>
+						<diV><font color="white" size="6" style="font-family:Calibri" class="gr1"><b>&nbsp;&nbsp;01:15&nbsp;&nbsp;</b></div>
+					</td>
+					<td>
+						<b>&nbsp;&nbsp;<img src="img/lev1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+					</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+						
+						<br>
+			
+							<center><div style="background-color:#DDC020"><br><a><font color="white" size="4" style="font-family:Calibri"><b> TICKETS </b></font></a><br></div></center>
+				
+						<br>
+						
+						</td>
+					</tr>
+				</table>
+			</center>
+		</div>
+	
+		<div class="col-lg-4 col-xs-12">
+			<center>
+			<table>
+					<tr>
+						<td bgcolor="#154286" colspan="3">
+							<font color="white" size="6" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp;22 </b></font><font color="white" style="font-family:Calibri" size="3"><b>SATURDAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font>
+						</td>
+					</tr>
+					
+					<tr>
+					<br>
+					<br>
+						<td colspan="3"><center><img src="img/laliga1.png" width="150" height="70"></center></td>
+					</tr>
+					<tr>
+					<td>
+					
+						&nbsp;&nbsp;<img src="img/logo1.png">
+					</td>
+					<td>
+						<diV><font color="white" size="6" style="font-family:Calibri" class="gr1"><b>&nbsp;&nbsp;23:00&nbsp;&nbsp;</b></div>
+					</td>
+					<td>
+						<b>&nbsp;&nbsp;<img src="img/cv1.png">&nbsp;&nbsp;&nbsp;</b>
+					</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+						
+						<br>
+			
+							<center><div style="background-color:#DDC020"><br><a><font color="white" size="4" style="font-family:Calibri"><b>TICKETS</b></font></a><br></div></center>
+				
+						<br>
+						
+						</td>
+					</tr>
+				</table>
+				</center>
+			</div>
+	
+		</div>
+	
+	<hr class"hr1">
+	<br>
+	<br>
+	<center><font color="#582141" style="font-family:Calibri" size="6px">Barca News</font></center>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/p1.JPG" class="image">
+			<div class="overlay">
+			<div class="text">Malcom back at training</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/p2.JPG" class="image">
+			<div class="overlay">
+			<div class="text">Arthur and Felipe meet up in barcelona</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/p3.JPG" class="image">
+			<div class="overlay">
+			<div class="text">Sergio reaches champions league century</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/p4.JPG" class="image">
+			<div class="overlay">
+			<div class="text">Levente, Barca's opponent in Copa del Rey Round of 16</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div style="background-color:#090B17" class="well container">
+		<div class="row">
+			<div class="col-lg-4 col-xs-12">
+			<center><img src="img/g2.jpg" class="hvr-grow image-rounded"></center><br>
+			<font color="white" size="4" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp; WATCH HIGHLIGHTS-</b></font>
+			</div>
+			
+			<div class="col-lg-2 col-xs-12">
+			<center><img src="img/g5.jpg" class="hvr-grow image-rounded"></center>
+			<font color="white" size="4" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp; Training with club</b></font>
+			</div>
+			
+			<div class="col-lg-4 col-xs-12">
+			<center><img src="img/g7.jpg" class="hvr-grow image-rounded"></center>
+			<font color="white" size="4" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp; Reviews on Third Kit</b></font>
+			</div>
+			
+			<div class="col-lg-2 col-xs-12">
+			<center><img src="img/g8.JPG" class="hvr-grow image-rounded"></center>
+			<font color="white" size="4" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp;Pique on Champions Leageu matches </b></font>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-xs-12">
+			<center><img src="img/g10.jpg" class="hvr-grow image-rounded"></center><br>
+			<font color="white" size="4" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp;President plans</b></font>
+			</div>
+			
+			<div class="col-lg-2 col-xs-12">
+			<center><img src="img/g3.jpg" class="hvr-grow image-rounded"></center>
+			<font color="white" size="4" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp;Match Gossips</b></font>
+			</div>
+			
+			<div class="col-lg-2 col-xs-12">
+			<center><img src="img/g9.jpg" class="hvr-grow image-rounded"></center>
+			<font color="white" size="4" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp;Club Manager Valverde's future</b></font>
+			</div>
+			
+			<div class="col-lg-4 col-xs-12">
+			<center><img src="img/g4.jpg" class="hvr-grow image-rounded"></center>
+			<font color="white" size="4" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp;MESSI MAGICAL MOMENTS</b></font>
+			</div>
+			<div class="col-lg-2 col-xs-12">
+			<center><img src="img/g6.jpg" class="hvr-grow image-rounded"></center>
+			<font color="white" size="4" style="font-family:Calibri"><b>&nbsp;&nbsp;&nbsp;Messi has the most free kicks in this season</b></font>
+			</div>
+		</div>
+	</div>
+
+	<div class="well container" style="background-color:white">
+		<br>
+			<br>
+			<center><font color="#582141" style="font-family:Calibri" size="6px">More Barca</font></center>
+			<br>
+		<br>
+		<div class="row">
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/g11.JPG" class="image">
+			<div class="overlay">
+			<div class="text">Niscola 1-5 Barca Lassa:Exibition to qualify for quarterfinals</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/g12.JPG" class="image">
+			<div class="overlay">
+			<div class="text">Barca Lassa 39-23 Bada Huesca:On top form!</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/g13.JPG" class="image">
+			<div class="overlay">
+			<div class="text">Barca Wins the 2018 SportTechi Award for Outstanding Sports Team</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/g14.JPG" class="image">
+			<div class="overlay">
+			<div class="text">UEFA Youth Leageu:FC Barcelona 2-0 Tottenham</div>
+			</div>
+			</div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/g15.JPG" class="image">
+			<div class="overlay">
+			<div class="text">Steve Nash and Stu Holden visit Cuitat Esportiva Joan Gamper</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/g16.JPG" class="image">
+			<div class="overlay">
+			<div class="text">Barca Lassa 77-73 Iberostar Tenerife: Strong second half yeilds win</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/g17.JPG" class="image">
+			<div class="overlay">
+			<div class="text">Badolona 1-2 Barca B :Big away win</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-12">
+			<div class="cont1">
+			<img src="img/g18.JPG" class="image">
+			<div class="overlay">
+			<div class="text">FC Barcelona 7-0 Madrid CFF:Deluge of goals</div>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	
+	
+
+	<div class="container-fluid bg1">
+	<br><br>
+	
+	<center><font color="white" style="font-family:Impact" size="10px"><i><b>CURRENT BEST</b></i></font></center><br><br>
+		<div class="row">
+			<div class="col-lg-4">
+			<div class="cont2">
+			<img src="img/messi1.jpg" class="image">
+			<div class="overlay2">
+			<div class="text"><font color="white" style="font-family:Impact" class="big1"><i align="center"><b>MESSI</b></i></font>
+			<hr>
+			<center><font size="6" color="white"><b>10&nbsp;</b>Lionel&nbsp;<b>Messi</b> </font></center>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="col-lg-4">
+			<div class="cont2">
+			<img src="img/cout1.jpg" class="image">
+			<div class="overlay2">
+			<div class="text"><font color="white" style="font-family:Impact" class="big1"><i align="center"><b>COUTINHO</b></i></font>
+			<hr>
+			<center><font size="6" color="white"><b>7</b>&nbsp;<b>Coutinho</b> </font></center>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="col-lg-4">
+			<div class="cont2">
+			<img src="img/s1.jpg" class="image">
+			<div class="overlay2">
+			<div class="text"><font color="white" style="font-family:Impact" class="big1"><i align="center"><b>SUAREZ</b></i></font>
+			<hr>
+			<center><font size="6" color="white"><b>9&nbsp;</b>Luis&nbsp;<b>Suarez</b> </font></center>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>
+<br>
+<br>
+<br>
+<div class="container-fluid bg2">
+	<br>
+	<br>
+	<br><br>
+	<br>
+	<br><br>
+	<br>
+	<br>
+	<center><font style="font-family:Impact" color="#E5C62F" class="big2">Buy tickets for the Barca<br>Stadium Tour & Museum<br></font><font style="font-family:Calibri"><b><input type="button" class="btn-danger btn-sm" value=" BUY TICKETS NOW "></b></font></center>
+</div>
+<br>
+<div class="well container-fluid">
+	<div class="row">
+		<div class="well col-lg-4" style="background-color:white">
+		<img src="img/kit1.jpg">
+		<div class="col-lg-5">
+		<br>
+		<br>
+		<img src="img/home kit1.png" width="100%">
+		</div>
+		<div class="col-lg-7">
+		<br>
+		<font style="font-family:Impact" size="4">FC BARCELONA HOME KIT</font><br><br>
+		<font style="font-family:calibri" size="3">Gear up blaugrana!. Add your name or name of your favorite player</font>
+		<br><br><a href="shop.html"><font style="font-family:Impact" color="#154285" size="3"><i>SHOP NOW&nbsp;&nbsp;</i></font><i class="far fa-arrow-alt-circle-right favsize1"></i></a>
+		</div>
+		<img src="img/nike1.png" height="20" width="60" align="right">
+		</div>
+		<div class="well col-lg-4" style="background-color:white">
+		<img src="img/kit2.jpg">
+		<div class="col-lg-5">
+		<br>
+		<br>
+		<img src="img/away kit1.png" width="100%">
+		</div>
+		<div class="col-lg-7">
+		<br>
+		<font style="font-family:Impact" size="4">FC BARCELONA AWAY KIT</font><br><br>
+		<font style="font-family:calibri" size="3">The Volt for History!. Add your name the or name of your favorite player</font>
+		<br><br><a href="shop.html"><font style="font-family:Impact" color="#154285" size="3"><i>SHOP NOW&nbsp;&nbsp;</i></font><i class="far fa-arrow-alt-circle-right favsize1"></i></a>
+		</div>
+		<img src="img/nike1.png" height="20" width="60" align="right">
+		<br>
+		</div>
+		<div class="well col-lg-4" style="background-color:white">
+		<img src="img/kit3.png">
+		<div class="col-lg-5">
+		<br>
+		<br>
+		<img src="img/third kit1.png" width="100%">
+		</div>
+		<div class="col-lg-7">
+		<br>
+		<font style="font-family:Impact" size="4">FC BARCELONA THIRD KIT</font><br><br>
+		<font style="font-family:calibri" size="3">Gear up the city of Barcelona!. Add your name the or name of your favorite player</font>
+		<br><br><a href="shop.html"><font style="font-family:Impact" color="#154285" size="3"><i>SHOP NOW&nbsp;&nbsp;</i></font><i class="far fa-arrow-alt-circle-right favsize1"></i></a>
+		</div>
+		<img src="img/nike1.png" height="20" width="60" align="right">
+		</div>
+	</div>
+</div>
+<div class="container-fluid" style="background-color:#121026">
+<div class="row">
+<div class="well container col-lg-3 bg3 hvr-grow">
+<br>
+<div style="background-color:black">
+<center><font style="font-family:calibri" color="white"><i>La Liga&nbsp;<img src="img/llt3.png" style="margin-top:-15px;margin-bottom:-15px;"><font color="#FCD000" size="4"><b>25</b></font>&nbsp;TITLES</i></center>
+</div>
+<br>
+</div>
+<div class="well container col-lg-3 bg3 hvr-grow">
+<br>
+<div style="background-color:black">
+<center><font style="font-family:calibri" color="white"><i>UEFA Champions League&nbsp;<img src="img/cht1.png" style="margin-top:-15px;margin-bottom:-15px;"><font color="#FCD000" size="4"><b>5</b></font>&nbsp;TROPHIES</i></center>
+</div>
+<br>
+</div>
+<div class="well container col-lg-3 bg3 hvr-grow">
+<br>
+<div style="background-color:black">
+<center><font style="font-family:calibri" color="white"><i>FIFA Club World Cup&nbsp;<img src="img/wct3.png" style="margin-top:-15px;margin-bottom:-15px;"><font color="#FCD000" size="4"><b>3</b></font>&nbsp;TROPHIES</i></center>
+</div>
+<br>
+</div>
+<div class="well container col-lg-3 bg3 hvr-grow">
+<br>
+<div style="background-color:black">
+<center><font style="font-family:calibri" color="white"><i>Copa Del Rey&nbsp;<img src="img/cdr2.png" style="margin-top:-15px;margin-bottom:-15px;"><font color="#FCD000" size="4"><b>30</b></font>&nbsp;TROPHIES</i></center>
+</div>
+<br>
+</div>
+</div>
+</div>
+<br><br>
+<div class="container-fluid bg4">
+<br>
+<div><center><font color="white" style="font-family:Calibri" size="6px"><b><u>FC BARCELONA</u></b></font><br><font color="#FCD000" style="font-family:Calibri" size="5px"><b>OUR PARTNERS</b></font></center></div>
+<br><br>
+<div class="row">
+<div class="col-lg-2">
+<center><img src="img/nike2.png" height="35px" width="80"></center>
+</div>
+<div class="col-lg-2">
+<center><img src="img/rakuten2.png" height="40px" width="200px"></center>
+</div>
+<div class="col-lg-2">
+<center><img src="img/beko1.png" height="35px" width="80"></center>
+</div>
+<div class="col-lg-2">
+<center><img src="img/gillette1.png" height="35px" width="150"></center>
+</div>
+<div class="col-lg-2">
+<center><img src="img/pes2019.png" height="35px" width="150"></center>
+</div>
+<div class="col-lg-2">
+<center><img src="img/estrella2.png" height="50px" width="200"></center>
+</div>
+<br>
+</div>
+</div>
+<br>
+<div><center><font color="white" style="font-family:Calibri" size="4px"><b>Follow FC Barcelona on social media</b></font></center></div>
+<br>
+<div class="row">
+<div class="col-lg-2">
+</div>
+<div class="col-lg-2" style="background-color:#3B5999">
+<br><i class="fab fa-facebook-square" style="color:white;font-size:30px;"></i><br><br><font color="white" style="font-size:Calibri">FC Barcelona<br>@fcbarcelona</font><br>
+</div>
+<div class="col-lg-2" style="background-color:#55ACEF">
+<br><i class="fab fa-twitter-square" style="color:white;font-size:30px;"></i><br><br><font color="white" style="font-size:Calibri">FC Barcelona<br>@fcbarcelona_cat</font><br>
+</div>
+<div class="col-lg-2" style="background-color:#BA0001">
+<br><i class="fab fa-youtube" style="color:white;font-size:30px;"></i><br><br><font color="white" style="font-size:Calibri">FC Barcelona<br>Youtube</font><br>
+</div>
+<div class="col-lg-2" style="background-color:#655CAB">
+<br><i class="fab fa-instagram" style="color:white;font-size:30px;"></i><br><br><font color="white" style="font-size:Calibri">FC Barcelona<br>@fcbarcelona</font><br>
+</div>
+<div class="col-lg-2">
+</div>
+</div>
+<br><br><br>
+<div style="background-color:#171733">
+<div class="container">
+<div class="row">
+<div class="col-lg-2">
+<a href="index.html"><font color="white" size="4" style="font-family:Calibri"><b>OUR CLUB</b></font></a>
+<br><br>
+<a href="index.html"><font color="white" size="3" style="font-family:Calibri">Main Partners</font><br></a>
+<a href="index.html"><font color="white" size="3" style="font-family:Calibri">Match Fixtures</font><br></a>
+<a href="index.html"><font color="white" size="3" style="font-family:Calibri">Barca News</font><br></a>
+<a href="index.html"><font color="white" size="3" style="font-family:Calibri">Events</font><br></a>
+<a href="index.html"><font color="white" size="3" style="font-family:Calibri">More Barca</font><br></a>
+<a href="index.html"><font color="white" size="3" style="font-family:Calibri">Current Best</font><br></a>
+<a href="index.html"><font color="white" size="3" style="font-family:Calibri">Buy Tickets</font><br></a>
+<a href="index.html"><font color="white" size="3" style="font-family:Calibri">Barca Kits</font><br></a>
+</div>
+<div class="col-lg-2">
+<a href="ticket.html"><font color="white" size="4" style="font-family:Calibri"><b>TICKETS</b></font></a>
+<br><br>
+<a href="ticket.html"><font color="white" size="3" style="font-family:Calibri">Next Match</font><br></a>
+<a href="ticket.html"><font color="white" size="3" style="font-family:Calibri">Ticket</font><br></a>
+<a href="ticket.html"><font color="white" size="3" style="font-family:Calibri">VIP Ticket</font><br></a>
+</div>
+<div class="col-lg-2">
+<a href="shop.html"><font color="white" size="4" style="font-family:Calibri"><b>BARCA SHOP</b></font></a>
+<br><br>
+<a href="shop.html"><font color="white" size="3" style="font-family:Calibri">Barca First Kit</font><br></a>
+<a href="shop.html"><font color="white" size="3" style="font-family:Calibri">Barca Away Kit</font><br></a>
+<a href="shop.html"><font color="white" size="3" style="font-family:Calibri">Barca Third Kit</font><br></a>
+</div>
+<div class="col-lg-2">
+<a href="about.html"><font color="white" size="4" style="font-family:Calibri"><b>ABOUT US</b></font></a>
+<br><br>
+<a href="about.html"><font color="white" size="3" style="font-family:Calibri">About Barca</font><br></a>
+<a href="about.html"><font color="white" size="3" style="font-family:Calibri">History</font><br></a>
+<a href="about.html"><font color="white" size="3" style="font-family:Calibri">Legands</font><br></a>
+</div>
+<div class="col-lg-2">
+<a href="contact.html"><font color="white" size="4" style="font-family:Calibri"><b>CONTACT US</b></font></a>
+<br><br>
+<a href="contact.html"><font color="white" size="3" style="font-family:Calibri">Contact Address</font><br></a>
+<a href="contact.html"><font color="white" size="3" style="font-family:Calibri">Contact No.</font><br></a>
+<a href="contact.html"><font color="white" size="3" style="font-family:Calibri">Location</font><br></a>
+</div>
+
+</div>
+<br>
+&nbsp;&nbsp;<img src="img/logo3.png">&nbsp;<font color="white" style="font-family:Calibri" size="4px"><b>FC BARCELONA</b></font>
+</div>
+</body>
+</html>
